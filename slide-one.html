@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+    <meta name="author" content="mxx">
+
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/sky.css" id="theme">
+
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="reveal">
+    <div class="slides">
+        <section>
+            <h2>Single Reveal.js Test</h2>
+
+            <p>
+                <samll>Created by <a href="http:MingXingTeam.github.io">Mao Xing Xing</a> <a href="###">@MXX</a></samll>
+            </p>
+        </section>
+        <section>
+            <section>
+                <h2>Vertical Slides1</h2>
+            </section>
+            <section>
+                <h2>Vertical Slides2</h2>
+            </section>
+            <section>
+                <h2>Vertical Slides3</h2>
+            </section>
+        </section>
+        <section data-markdown>
+            <script type="text/template">
+                ## markdown test
+
+                A paragraph with some text and a [link](http://hakim.se).
+
+                ## 代碼片段
+                ```javascript
+                function test(){
+                console.info("This is a test~~");
+                }
+                ```
+            </script>
+        </section>
+        <section>
+            <section>
+                <div class="fragment grow">fragment1</div>
+                <div class="fragment current-visible">fragment2</div>
+            </section>
+        </section>
+        <section id="themes">
+            <h2>Themes Test</h2>
+
+            <p>
+                <!-- Hacks to swap themes after the page has loaded. Not flexible and only intended for the reveal.js demo deck. -->
+                <a href="#"
+                   onclick="document.getElementById('theme').setAttribute('href','css/theme/black.css'); return false;">Black
+                    (default)</a> -
+                <a href="#"
+                   onclick="document.getElementById('theme').setAttribute('href','css/theme/white.css'); return false;">White</a>
+                -
+                <a href="#"
+                   onclick="document.getElementById('theme').setAttribute('href','css/theme/league.css'); return false;">League</a>
+                -
+                <a href="#"
+                   onclick="document.getElementById('theme').setAttribute('href','css/theme/sky.css'); return false;">Sky</a>
+                -
+                <a href="#"
+                   onclick="document.getElementById('theme').setAttribute('href','css/theme/beige.css'); return false;">Beige</a>
+                -
+                <a href="#"
+                   onclick="document.getElementById('theme').setAttribute('href','css/theme/simple.css'); return false;">Simple</a>
+                <br>
+                <a href="#"
+                   onclick="document.getElementById('theme').setAttribute('href','css/theme/serif.css'); return false;">Serif</a>
+                -
+                <a href="#"
+                   onclick="document.getElementById('theme').setAttribute('href','css/theme/blood.css'); return false;">Blood</a>
+                -
+                <a href="#"
+                   onclick="document.getElementById('theme').setAttribute('href','css/theme/night.css'); return false;">Night</a>
+                -
+                <a href="#"
+                   onclick="document.getElementById('theme').setAttribute('href','css/theme/moon.css'); return false;">Moon</a>
+                -
+                <a href="#"
+                   onclick="document.getElementById('theme').setAttribute('href','css/theme/solarized.css'); return false;">Solarized</a>
+            </p>
+        </section>
+        <section>
+            <section data-background="#dddddd">
+                <h2>Slide Backgrounds Test</h2>
+                <pre>
+                    <code style="word-wrap: break-word;">
+                        &lt;section data-background="image.png"&gt;<br>
+                        &lt;section data-background="#dddddd"&gt;
+                    </code>
+                </pre>
+                <a href="#" class="navigate-down">
+                    <p>向下导航</p>
+                    <!--<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">-->
+                </a>
+            </section>
+
+            <section
+                    data-background-video="https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.mp4,https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.webm"
+                    data-background-color="#000000">
+                <div style="background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px;">
+                    <h2>Video Backgrounds Test</h2>
+                    <pre><code style="word-wrap: break-word;">&lt;section data-background-video="video.mp4,video.webm"&gt;</code></pre>
+                </div>
+            </section>
+        </section>
+        <section data-background="http://i.giphy.com/90F8aUepslB84.gif">
+            <h2>... and GIFs!</h2>
+        </section>
+        <section data-transition="slide" data-background-transition="zoom">
+            <h2>Background Transitions Test</h2>
+                <pre>
+                    <code>Reveal.configure({ backgroundTransition: 'zoom' })
+                        &lt;section data-transition="slide" data-background-transition="zoom"&gt;
+                    </code>
+                </pre>
+        </section>
+        <section>
+            <h2>Pretty Code Test</h2>
+                <pre><code data-trim contenteditable>
+                    function linkify( selector ) {
+                    alert(1);
+                    }
+                </code></pre>
+        </section>
+        <section>
+            <h2>Slide 内部链接测试</h2>
+
+            <p>
+                You can link between slides internally,
+                <a href="#/0">like this</a>.
+            </p>
+        </section>
+        <section>
+            <h2>Speaker View Test</h2>
+
+            <p>There's a <a href="https://github.com/hakimel/reveal.js#speaker-notes">speaker view</a>. It includes a
+                timer, preview of the upcoming slide as well as your speaker notes.</p>
+
+            <p>Press the <em>S</em> key to try it out.</p>
+
+            <aside class="notes">
+                Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open
+                the speaker notes window (hit 's' on your keyboard).
+            </aside>
+        </section>
+        <section>
+            <h2>Export to PDF Test</h2>
+
+            <p>Presentations can be <a href="https://github.com/hakimel/reveal.js#pdf-export">exported to PDF</a>,
+                here's an example:</p>
+            <iframe src="//www.slideshare.net/slideshow/embed_code/42840540" width="445" height="355" frameborder="0"
+                    marginwidth="0" marginheight="0" scrolling="no"
+                    style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen></iframe>
+        </section>
+        <section data-state="customevent">
+            <h4>State Events And dada-state Test</h4>
+
+            <p>
+                <h5>给slide添加事件</h5>
+                <pre><code data-trim>
+                    &lt;section data-state="customevent"
+                </code>
+</pre>
+            </p>
+            <pre>
+                <code class="javascript" data-trim contenteditable style="font-size: 18px;">
+                    Reveal.addEventListener( 'customevent', function() {
+                    console.log( '"customevent" has fired' );
+                    } );
+                </code></pre>
+            <p>
+            <h5>代码类型设置 以及是否內容可編輯</h5>
+                <pre>
+                <code>
+
+                    &lt;code class="javascript" contenteditable
+
+                </code>
+        </pre>
+            </p>
+        </section>
+
+    </div>
+</div>
+
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.min.js"></script>
+
+<script>
+    // Full list of configuration options available here:
+    // https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+        // Display controls in the bottom right corner
+        controls: true,
+        // Display controls in the bottom right corner
+        progress: true,
+        //Display controls in the bottom right corner
+        history: true,
+        // Vertical centering of slides
+        center: true,
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+        transition: Reveal.getQueryHash().transition || 'concave', // default/cube/page/concave/zoom/linear/fade/none
+
+        // Parallax scrolling
+        // parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+        // parallaxBackgroundSize: '2100px 900px',
+
+        // Optional libraries used to extend on reveal.js
+        dependencies: [{
+            src: 'lib/js/classList.js',
+            condition: function () {
+                return !document.body.classList;
+            }
+        }, {
+            src: 'plugin/markdown/marked.js',
+            condition: function () {
+                return !!document.querySelector('[data-markdown]');
+            }
+        }, {
+            src: 'plugin/markdown/markdown.js',
+            condition: function () {
+                return !!document.querySelector('[data-markdown]');
+            }
+        }, {
+            src: 'plugin/highlight/highlight.js',
+            async: true,
+            callback: function () {
+                hljs.initHighlightingOnLoad();
+            }
+        }, {
+            src: 'plugin/zoom-js/zoom.js',
+            async: true,
+            condition: function () {
+                return !!document.body.classList;
+            }
+        }, {
+            src: 'plugin/notes/notes.js',
+            async: true,
+            condition: function () {
+                return !!document.body.classList;
+            }
+        }]
+    });
+    Reveal.addEventListener('customevent', function () {
+        console.log('"customevent" has fired');
+    });
+</script>
+</body>
+</html>
