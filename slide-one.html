@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>CSS 后处理器</title>
     <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
     <meta name="author" content="mxx">
 
@@ -21,6 +21,21 @@
     <!--[if lt IE 9]>
     <script src="lib/js/html5shiv.js"></script>
     <![endif]-->
+
+    <style>
+    .powered {
+        position: fixed;
+        left: 20px;
+        bottom: 20px;
+        color: #555;
+      }
+      .powered p {
+        margin: 6px auto;
+      }
+      .powered a {
+        color: #555;
+      }
+    </style>
 </head>
 <body>
 <div class="reveal">
@@ -205,7 +220,9 @@
 
     </div>
 </div>
-
+<div class="powered">
+<p>《CSS 后处理器》</p>
+</div>
 <script src="lib/js/head.min.js"></script>
 <script src="js/reveal.min.js"></script>
 

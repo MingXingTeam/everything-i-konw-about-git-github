@@ -1,0 +1,19 @@
+ul{
+	text-decoration: none;
+	list-style: none;
+}
+body{
+	color:#ffffff;
+}
+.powered {
+	position: fixed;
+	left: 20px;
+	bottom: 20px;
+	color: #555;
+}
+.powered p {
+	margin: 6px auto;
+}
+.powered a {
+	color: #555;
+}
