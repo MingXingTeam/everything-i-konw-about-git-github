@@ -18,3 +18,6 @@ just like **slide-one.html**
 
 3、open slide-one.html in a browser to view it
 
+# show
+
+[awesome-git-github](http:mingxingteam.github.io/everything-i-konw-about-git-github/awesome-git-github.html) 
