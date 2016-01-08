@@ -37,18 +37,18 @@
         </section>
         <section>
             <section>
-                <h2>git常规流程</h2>
+                <h2>git篇</h2>
             </section>
             <section>
+                <h2>git常规使用</h2>
             	<img src="http://7xlzcx.com1.z0.glb.clouddn.com/start.gif" alt="">
             </section>
             <section>
             	<h2>文件的几个状态</h2>
-            </section>
-            <section>
-            	<p class="fragment">untracked</p>
-            	<p class="fragment">not staged</p>
-            	<p class="fragment">not committed</p>
+                <br>
+                <p class="fragment grow">untracked</p>
+                <p class="fragment grow">not staged</p>
+                <p class="fragment grow">not committed</p>
             </section>
             <section>
             	<h2>git机制理解</h2>
@@ -60,41 +60,73 @@
             	<img src="img/commits-and-parents.png" alt="">
             </section>
             <section>
+                <h2>查看工作区文件和暂存区的差异</h2>
+                <p>git diff</p>
+            </section>
+            <section>
+                <h2>取消对工作区文件的修改</h2>
+                <p>git checkout -- [file]</p>
+            </section>
+            <section>
+                <h2>取消暂存区的操作</h2>
+                <p>git reset HEAD [file]</p>
+            </section>
+            <section>
+                <h2>重新修改提交说明</h2>
+                <p>git commit --amend</p>
+            </section>
+            <section>
+                <h2>查看分支之间的差异</h2>
+                <p>git log branchA ^branchB</p>
+            </section>
+            <section>
+                <h2>查看合并的分支和没有合并的分支</h2>
+                <p>git branch --merged | git branch --no-merged</p>
+            </section>
+            <!-- <section>
             	<h2>注意点</h2>
             	<p>重命名和拷贝的时候不会产生文件对象</p>
             	<p></p>
-            </section>
-            <section>
+            </section> -->
+            <!-- <section>
                 <h2>git分支的使用</h2>
             </section>
             <section>
             	<img src="http://7xlzcx.com1.z0.glb.clouddn.com/branch.gif" alt="">
+            </section> -->
+            <section>
+                <h2>查看分支状态</h2>
+                <p>git log --all --graph --pretty=oneline --abbrev-commit --decorate </p>
             </section>
             <section>
-            	<h2>git分支合并情况演示</h2>
+            	<h2>git分支合并情况</h2>
             </section>
-            <section><h2>普通合并</h2></section>
+            <section>
+                <h2>快进合并</h2>
+                <img src="img/fast-forward-merge.png" alt="">
+            </section>
+            <section>
+                <h2>git merge iss53</h2>
+                <img src="img/fast-forward-merge-2.png" alt="">
+            </section>
+            <section>
+                <h2>普通合并</h2>
+                <img src="img/fast-forward-merge-2.png" alt="">
+            </section>
             <section>
             	<h2>git merge i18n</h2>
-            	<img src="img/fast-forward-merge-2.png" alt="">
-            </section>
-            <section>
-            	<h2>快进合并</h2>
-			</section>
-			<section>
-            	<h2>git merge iss53</h2>
             	<img src="img/fast-forward-merge-3.png" alt="">
             </section>
+            
 			<section>
 				<h2>解决合并冲突</h2>
-				
 			</section>
-			<section>
+			<!-- <section>
 				<h2>建议</h2>
 				<p>修改好一个功能后就提交到本地版本库，避免冲突太多</p>
-			</section>
+			</section> -->
             <section>
-            	<h2>远程仓库的使用</h2>
+            	<h2>推送到远程仓库</h2>
             </section>
             <section>
             	<h2>git clone [remote url]</h2>
@@ -104,70 +136,104 @@
             	<h2>git push [remote branch] [local branch]</h2>
             	<img src="img/remote-2.png" alt="">
             </section>
-            <section>
+            <!-- <section>
             	<h2>
             		注意点
             	</h2>
             	<p>push分支上去的时候，远程的origin/master指向不会变也就是说本地的origin/master还是原来的位置</p>
-            </section>
+            </section> -->
             <section>
             	<img src="img/remote-3.png" alt="">
             </section>
             <section>
-            	<h2>push到远程服务器问题演示和解决方法</h2>
+            	<h2>push到远程服务器报错</h2>
                 <img src="img/remote-push-problem-1.png" alt="">
             </section>
             <section>
+                <h2>演示</h2>
             	<img src="http://7xlzcx.com1.z0.glb.clouddn.com/remote-push-problem-1.gif" alt="">
             </section>
-            <section>
-            	<h2>git 比较常用的命令</h2>
-            	<p class="fragment">取消暂存区的操作:git reset HEAD [file]</p>
-				<p class="fragment">取消对工作区文件的修改:git checkout -- [file]</p>
-				<p class="fragment">给某个远程仓库加一个名字：git remote add pb git://github.com/paulboone/ticgit.git</p>
-				<p class="fragment">查看远程仓库的信息:git remote show pb</p>
-				<p class="fragment">查看当前HEAD指针指向的分支状态：git log --graph --pretty=oneline --abbrev-commit --decorate </p>
-				<p class="fragment">将版本库更新到工作区:git checkout -- [filename]</p>
-            </section>
-            <section>
-            	<h2>git 其他命令使用</h2>
-            	<p class="fragment"> pull = fecth + merge </p>
-				<p class="fragment">查看工作区文件和暂存区的差异:git diff </p>
-				<p class="fragment">查看暂存区和上次提交时的差异:git diff --staged</p>
-				<p class="fragment">已经跟踪的文件add和commit一起做：git commit -am "commit message"</p>
-				<p class="fragment">删除暂存区和工作区的文件：git rm index.html</p>
-				<p class="fragment">从暂存区删除 工作区的留着：git rm --cached index.html</p>
-				<p class="fragment">重新修改提交说明 ，如果暂存区变了 会重新再次提交 但是是同一个提交:git commit --amend</p>
-            </section>
-
-            <section>
-            	<p class="fragment">git log branchA ^branchB是什么意思？</p>
-            	<p class="fragment">git rebase命令是什么意思？</p>
-            	<p class="fragment">git log你理解了吗？</p>
-            </section>
+           <!--  <section>
+                   <p class="fragment">给某个远程仓库加一个名字：git remote add pb git://github.com/paulboone/ticgit.git</p>
+                   <p class="fragment">查看远程仓库的信息:git remote show pb</p>
+           </section> -->
+           <!--  <section>
+               <h2>git 其他命令使用</h2>
+               <p class="fragment"> pull = fecth + merge </p>
+                           <p class="fragment">已经跟踪的文件add和commit一起做：git commit -am "commit message"</p>
+                           <p class="fragment">删除暂存区和工作区的文件：git rm index.html</p>
+                           <p class="fragment">从暂存区删除 工作区的留着：git rm --cached index.html</p>
+           </section> -->
           <section>
 			<h2>git命令的别名</h2>     
 			<br>     	
 			<p>
-				git config --global alias.lol "log --all --oneline --graph --decoration"
+				git config --global alias.lol "log --all --oneline --graph --decorate"
 			</p>
           </section>
 
             <section>
-            	<h2>git & github相关资源</h2>
+            	<h2>git相关资源</h2>
             	<br>
             	<ul>
-	            	<li>github表情:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.emoji-cheat-sheet.com/" target="__blank">http://www.emoji-cheat-sheet.com/</a></li>
 	            	<li>git使用：&nbsp;&nbsp;<a href="https://git-scm.com/book/zh/v2" target="__blank">https://git-scm.com/book/zh/v2</a></li>
 	            	<li>git-sheet：<a href="https://training.github.com/kit/downloads/github-git-cheat-sheet.pdf" target="__blank">https://training.github.com/kit/downloads/github-git-cheat-sheet.pdf</a></li>
             	</ul>
             </section>
             <section>
-            	<h2>github</h2>
+            	<h2>github篇</h2>
+            </section>
+            <section>
+                <h2>github工作流是怎么样的？</h2>
+            </section>
+            <section>
+                <h2>多人协作开发</h2>
+                <p class="fragment">创建分支</p>
+                    <p class="fragment">提交代码</p>
+                    <p class="fragment">pull request</p>
+                    <p class="fragment">查看和讨论你的想法和代码：@somebody/team #issue(可以链接到其他issue) markdown语法</p>
+                    <p class="fragment">部署分支到生产进行测试，如果有问题回退到主干</p>
+                    <p class="fragment">合并分支到主干:Pull Request的历史是一个项目的演进过程</p>
+            </section>
+            <section>
+                <h2>简单介绍如何参与开源项目？</h2>
+            </section>
+            <section>
+                <p class="fragment">找项目</p>
+                <p class="fragment">查看代码和文档：比如有docs目录，readme或者wiki 特别是Contributing，一般是维护人员或者主要开发人员想要的特性或者pull request（加了这个文件后，其他人创建issue或者pull request的时候会看到指向这个文件的链接）</p>
+                <p class="fragment">如果有发现BUG或者看不懂文档或者有想法怎么办？创建一个issue！</p>
+                <p class="fragment">对BUG打补丁或者增加特性：pull request!</p>
+            </section>
+            <section>
+                <h2>github使用技巧</h2>
+            </section>
+
+            <section>
+                <h2>如何将其他人加入到项目的开发？</h2>
+            </section>
+            <section>
+                <h2>如何对项目创建一个github页面？</h2>
+            </section>
+            <!-- <section>
+                <h2>快速检出上一个分支</h2>
+                <p>git checkout -</p>
+            </section> -->
+            <section>
+                <h2>比较你的提交</h2>
+                <p>https://github.com/MingXingTeam/React-Demo/compare</p>
+            </section>
+            <section>
+                <h2>查看某个用户的所有提交</h2>
+                <p>https://github.com/superInfo2/front-end-resources/commits/master?author=MingXingTeam</p>
+            </section>
+            <section>
+                <h2>在仓库中打开帮助快捷键</h2>
+                <p>?</p>
             </section>
 			<section>
 				<h2>短地址</h2>
 				<img src="img/gitio.png" alt="">
+                <a href="http://git.io/">http://git.io/</a>
 			</section>
 			<section>
 				<h2>查看pull request的补丁或者内容比对</h2>
@@ -175,6 +241,7 @@
 			<section>
 				<img src="http://7xlzcx.com1.z0.glb.clouddn.com/pull-request-patch-dif.gif" alt="">
 			</section>
+            
 			<section>
 				<h2>merge的时候关闭issues</h2>
 			</section>
@@ -187,18 +254,36 @@
 			<section>
 				<img src="http://7xlzcx.com1.z0.glb.clouddn.com/blame.gif" alt="">
 			</section>
+            <section>
+                <h2>issue中创建更小的任务列表：TODO</h2>
+            </section>
 			<section>
-				<h2>加上版权信息</h2>
+				<h2>快速加上版权信息和.gitignore</h2>
 			</section>
 			<section>
 				<img src="http://7xlzcx.com1.z0.glb.clouddn.com/licence.gif" alt="">
 			</section>
+            <section>
+                <h2>issue里面的milestone和assignee是什么?</h2>
+            </section>
+            <section>
+                <h2>issue里面创建自己的label</h2>
+            </section>
+       <!--      <section>
+                <h2>相当于是给issue分组，你可以自己根据你的需求分组。比如分一个BUG组 有哪些BUG;或者分一个时间点要做的事有哪些;比如产品设置的一个组 讨论如何设计产品</h2>
+            </section> -->
 			<section>
 				<h2>撤销pull request</h2>
 			</section>
 			<section>
 				<img src="http://7xlzcx.com1.z0.glb.clouddn.com/revert.gif" alt="">
 			</section>
+            <section>
+                <h2>
+                    issue快速引用
+                </h2>
+                <p>选中 按下r就行</p>
+            </section>
 			<section>
 				<h2>跟踪pull request和issues</h2>
 			</section>
@@ -211,8 +296,36 @@
 			<section>
 				<img src="http://7xlzcx.com1.z0.glb.clouddn.com/explore.gif" alt="">
 			</section>
+           
+            <section>
+                <h2>github集成</h2>
+                <p>
+                   <a href="https://github.com/integrations/feature/code" target="__blank"> https://github.com/integrations/feature/code</a>
+                </p>
+            </section>
+            <section>
+                <h2>github资源</h2>
+                <ul>
+                     <li>
+                    github秘籍：<a href="https://github.com/tiimgreen/github-cheat-sheet/blob/master/README.zh-cn.md" target="__blank">https://github.com/tiimgreen/github-cheat-sheet/blob/master/README.zh-cn.md</a>
+                </li>
+                <li>
+                    github指导：<a href="https://guides.github.com/" target="__blank">https://guides.github.com/</a>
+                </li>
+                <li>github表情:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="http://www.emoji-cheat-sheet.com/" target="__blank">http://www.emoji-cheat-sheet.com/</a> | <a href="https://github.com/scotch-io/All-Github-Emoji-Icons" target="__blank">https://github.com/scotch-io/All-Github-Emoji-Icons</a></li>
+                <li>
+                    前端开发和设计项目：<a href="https://www.designernews.co/" target="__blank">https://www.designernews.co/</a>
+                </li>
+                </ul>
+               
+            </section>
+            <!-- <section>
+                <h2>pull request的评论支持markdown语法</h2>
+            </section> -->
 			<section data-background-transition="slide" data-background="img/last.jpg">
 			</section>
+            
         </section>
     </div>
 </div>
