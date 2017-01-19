@@ -28,40 +28,27 @@
 <div class="reveal">
     <div class="slides">
          <section data-background-transition="slide" data-background="img/bomb.jpg" >
-            <h1>github介绍</h1>
+            <h1>git和github介绍</h1>
             <p>
                 <a href="http://MingXingTeam.com" traget="__blank">毛毛</a>
                 <br>
-                2016-1-7 于杭州
+                2017-1-20 于杭州
             </p>
         </section>
         <section>
             <section>
-                <h2>git篇</h2>
-            </section>
-            <section>
-                <h2>git常规使用</h2>
-            	<img src="http://7xlzcx.com1.z0.glb.clouddn.com/start.gif" alt="">
-            </section>
-            <section>
-            	<h2>文件的几个状态</h2>
-                <br>
-                <p class="fragment grow">untracked</p>
-                <p class="fragment grow">not staged</p>
-                <p class="fragment grow">not committed</p>
-            </section>
-            <section>
-            	<h2>git机制理解</h2>
-            </section>
-            <section>
-            	<img src="img/commit-and-tree.png" alt="">
-            </section>
-            <section>
-            	<img src="img/commits-and-parents.png" alt="">
-            </section>
-            <section>
-                <h2>查看工作区文件和暂存区的差异</h2>
-                <p>git diff</p>
+		<h2>基本</h2>
+		工作区
+		暂存区
+		提交区
+
+		文件的三种状态：
+		未跟踪   untrancked
+		未暂存   changs to be commited
+		未提交   changes not staged for commit
+
+		查看工作区文件和暂存区的差异 git diff
+		查看暂存区和提交区的区别 git diff --cached
             </section>
             <section>
                 <h2>取消对工作区文件的修改</h2>
@@ -74,29 +61,6 @@
             <section>
                 <h2>重新修改提交说明</h2>
                 <p>git commit --amend</p>
-            </section>
-            <section>
-                <h2>查看分支之间的差异</h2>
-                <p>git log branchA ^branchB</p>
-            </section>
-            <section>
-                <h2>查看合并的分支和没有合并的分支</h2>
-                <p>git branch --merged | git branch --no-merged</p>
-            </section>
-            <!-- <section>
-            	<h2>注意点</h2>
-            	<p>重命名和拷贝的时候不会产生文件对象</p>
-            	<p></p>
-            </section> -->
-            <!-- <section>
-                <h2>git分支的使用</h2>
-            </section>
-            <section>
-            	<img src="http://7xlzcx.com1.z0.glb.clouddn.com/branch.gif" alt="">
-            </section> -->
-            <section>
-                <h2>查看分支状态</h2>
-                <p>git log --all --graph --pretty=oneline --abbrev-commit --decorate </p>
             </section>
             <section>
             	<h2>git分支合并情况</h2>
