@@ -40,37 +40,21 @@
                 <h2>git篇</h2>
             </section>
             <section>
-                <h2>git基本</h2>
-            	<img src="http://7xlzcx.com1.z0.glb.clouddn.com/start.gif" alt="">
-            </section>
-            <section>
-            	工作区
-		暂存区
-		提交区
+		<p>工作区</p>
+		<p>暂存区</p>
+		<p>提交区</p>
 
-		文件的三种状态：
-		未跟踪   untrancked
-		未暂存   changs to be commited
-		未提交   changes not staged for commit
+		<p>文件的三种状态：</p>
+		<p>未跟踪   untrancked</p>
+		<p>未暂存   changs to be commited</p>
+		<p>未提交   changes not staged for commit</p>
 
-		查看工作区文件和暂存区的差异 git diff
-		查看暂存区和提交区的区别 git diff --cached
-            </section>
-            <section>
-                <h2>查看工作区文件和暂存区的差异</h2>
-                <p>git diff</p>
-            </section>
-            <section>
-                <h2>取消对工作区文件的修改</h2>
-                <p>git checkout -- [file]</p>
-            </section>
-            <section>
-                <h2>取消暂存区的操作</h2>
-                <p>git reset HEAD [file]</p>
-            </section>
-            <section>
-                <h2>重新修改提交说明</h2>
-                <p>git commit --amend</p>
+		<p>查看工作区文件和暂存区的差异 git diff</p>
+		<p>查看暂存区和提交区的区别 git diff --cached</p>
+		    
+		<p>取消对工作区文件的修改 git checkout -- [file]</p>
+		<p>取消暂存区的操作 git reset HEAD [file]</p>    
+		<p>重新修改提交说明 git commit --amend</p>
             </section>
             <section>
                 <h2>查看分支之间的差异</h2>
@@ -80,17 +64,6 @@
                 <h2>查看合并的分支和没有合并的分支</h2>
                 <p>git branch --merged | git branch --no-merged</p>
             </section>
-            <!-- <section>
-            	<h2>注意点</h2>
-            	<p>重命名和拷贝的时候不会产生文件对象</p>
-            	<p></p>
-            </section> -->
-            <!-- <section>
-                <h2>git分支的使用</h2>
-            </section>
-            <section>
-            	<img src="http://7xlzcx.com1.z0.glb.clouddn.com/branch.gif" alt="">
-            </section> -->
             <section>
                 <h2>查看分支状态</h2>
                 <p>git log --all --graph --pretty=oneline --abbrev-commit --decorate </p>
@@ -105,77 +78,6 @@
             <section>
                 <h2>git merge iss53</h2>
                 <img src="img/fast-forward-merge-2.png" alt="">
-            </section>
-            <section>
-                <h2>普通合并</h2>
-                <img src="img/fast-forward-merge-2.png" alt="">
-            </section>
-            <section>
-            	<h2>git merge i18n</h2>
-            	<img src="img/fast-forward-merge-3.png" alt="">
-            </section>
-            
-			<section>
-				<h2>解决合并冲突</h2>
-			</section>
-			<!-- <section>
-				<h2>建议</h2>
-				<p>修改好一个功能后就提交到本地版本库，避免冲突太多</p>
-			</section> -->
-            <section>
-            	<h2>推送到远程仓库</h2>
-            </section>
-            <section>
-            	<h2>git clone [remote url]</h2>
-            	<img src="img/remote.png" alt="">
-            </section>
-            <section>
-            	<h2>git push [remote branch] [local branch]</h2>
-            	<img src="img/remote-2.png" alt="">
-            </section>
-            <!-- <section>
-            	<h2>
-            		注意点
-            	</h2>
-            	<p>push分支上去的时候，远程的origin/master指向不会变也就是说本地的origin/master还是原来的位置</p>
-            </section> -->
-            <section>
-            	<img src="img/remote-3.png" alt="">
-            </section>
-            <section>
-            	<h2>push到远程服务器报错</h2>
-                <img src="img/remote-push-problem-1.png" alt="">
-            </section>
-            <section>
-                <h2>演示</h2>
-            	<img src="http://7xlzcx.com1.z0.glb.clouddn.com/remote-push-problem-1.gif" alt="">
-            </section>
-           <!--  <section>
-                   <p class="fragment">给某个远程仓库加一个名字：git remote add pb git://github.com/paulboone/ticgit.git</p>
-                   <p class="fragment">查看远程仓库的信息:git remote show pb</p>
-           </section> -->
-           <!--  <section>
-               <h2>git 其他命令使用</h2>
-               <p class="fragment"> pull = fecth + merge </p>
-                           <p class="fragment">已经跟踪的文件add和commit一起做：git commit -am "commit message"</p>
-                           <p class="fragment">删除暂存区和工作区的文件：git rm index.html</p>
-                           <p class="fragment">从暂存区删除 工作区的留着：git rm --cached index.html</p>
-           </section> -->
-          <section>
-			<h2>git命令的别名</h2>     
-			<br>     	
-			<p>
-				git config --global alias.lol "log --all --oneline --graph --decorate"
-			</p>
-          </section>
-
-            <section>
-            	<h2>git相关资源</h2>
-            	<br>
-            	<ul>
-	            	<li>git使用：&nbsp;&nbsp;<a href="https://git-scm.com/book/zh/v2" target="__blank">https://git-scm.com/book/zh/v2</a></li>
-	            	<li>git-sheet：<a href="https://training.github.com/kit/downloads/github-git-cheat-sheet.pdf" target="__blank">https://training.github.com/kit/downloads/github-git-cheat-sheet.pdf</a></li>
-            	</ul>
             </section>
             <section>
             	<h2>github篇</h2>
